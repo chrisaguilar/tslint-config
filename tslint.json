@@ -2,15 +2,38 @@
   "rulesDirectory": [
     "node_modules/tslint/lib/rules",
     "node_modules/tslint-eslint-rules/dist/rules",
-    "node_modules/tslint-immutable/rules",
     "node_modules/tslint-microsoft-contrib",
     "node_modules/tslint-misc-rules/rules",
     "node_modules/tslint-react/rules"
   ],
   "rules": {
+    "array-bracket-spacing": [
+      true,
+      "always",
+      {
+        "arraysInArrays": false,
+        "objectsInArrays": false,
+        "singleValue": false
+      }
+    ],
+    "block-spacing": [
+      true,
+      "always"
+    ],
+    "brace-style": [
+      true,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
     "chai-prefer-contains-to-index-of": true,
     "chai-vague-errors": true,
     "export-name": true,
+    "handle-callback-err": [
+      true,
+      "^(err|error|e|rej|reject)$"
+    ],
     "import-name": true,
     "insecure-random": true,
     "jsx-alignment": true,
@@ -37,13 +60,31 @@
     "no-document-domain": true,
     "no-document-write": true,
     "no-duplicate-case": true,
+    "no-empty-character-class": true,
     "no-empty-interfaces": true,
     "no-empty-line-after-opening-brace": true,
+    "no-ex-assign": true,
     "no-exec-script": true,
+    "no-extra-boolean-cast": true,
     "no-for-in": true,
     "no-function-constructor-with-string-args": true,
+    "no-inner-declarations": [
+      true,
+      "both"
+    ],
     "no-inner-html": true,
     "no-invalid-regexp": true,
+    "no-irregular-whitespace": true,
+    "no-multi-spaces": [
+      true,
+      {
+        "exceptions": {
+          "BinaryExpression": false,
+          "PropertyAssignment": false,
+          "VariableDeclaration": false
+        }
+      }
+    ],
     "no-multiline-string": true,
     "no-octal-literal": true,
     "no-regex-spaces": true,
@@ -54,6 +95,7 @@
     "no-string-based-set-interval": true,
     "no-string-based-set-timeout": true,
     "no-typeof-undefined": true,
+    "no-unexpected-multiline": true,
     "no-unnecessary-bind": true,
     "no-unnecessary-field-initialization": true,
     "no-unnecessary-local-variable": true,
@@ -61,10 +103,52 @@
     "no-var-self": true,
     "no-with-statement": true,
     "non-literal-require": true,
+    "object-curly-spacing": [
+      true,
+      "always"
+    ],
     "promise-must-complete": true,
     "react-no-dangerous-html": true,
     "react-this-binding-issue": true,
+    "space-in-parens": [
+      true,
+      "always",
+      {
+        "exceptions": [
+          "{}",
+          "[]",
+          "()",
+          "empty"
+        ]
+      }
+    ],
+    "ter-arrow-body-style": [
+      true,
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": true
+      }
+    ],
+    "ter-arrow-spacing": [
+      true,
+      {
+        "before": true,
+        "after": true
+      }
+    ],
     "use-named-parameter": true,
+    "valid-jsdoc": [
+      true,
+      {
+        "prefer": {
+          "return": "returns"
+        },
+        "requireReturn": true,
+        "requireParamDescription": true,
+        "requireReturnDescription": true,
+        "matchDescription": "^[A-Z][A-Za-z0-9\\s]*[.]$"
+      }
+    ],
     "valid-typeof": true
   }
 }

@@ -22,9 +22,9 @@
   "dependencies": {
     "tslint": "^4.5.1",
     "tslint-eslint-rules": "^3.4.0",
-    "tslint-immutable": "^2.1.0",
     "tslint-microsoft-contrib": "^4.0.0",
     "tslint-misc-rules": "^2.10.0",
-    "tslint-react": "^2.4.0"
+    "tslint-react": "^2.4.0",
+    "typescript": "^2.2.1"
   }
 }

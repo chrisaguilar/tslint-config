@@ -2,7 +2,7 @@
   "name": "@chrisaguilar/tslint-config",
   "version": "0.0.1",
   "description": "My Personal TSLint Config",
-  "main": "tslint.json",
+  "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",

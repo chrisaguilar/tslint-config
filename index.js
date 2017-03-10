@@ -1,4 +1,4 @@
-{
+module.exports = {
   "rulesDirectory": [
     "node_modules/tslint-eslint-rules/dist/rules",
     "node_modules/tslint-microsoft-contrib",

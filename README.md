@@ -2,11 +2,11 @@
 
 ## Usage
 
-`$ yarn add -D @chrisaguilar/tslint-config`
+`$ yarn add -D typescript tslint @chrisaguilar/tslint-config`
 
 or
 
-`$ npm install -D @chrisaguilar/tslint-config`
+`$ npm install -D typescript tslint @chrisaguilar/tslint-config`
 
 Then, in `tslint.json`:
 ```json
@@ -14,7 +14,7 @@ Then, in `tslint.json`:
   "extends": [
     "@chrisaguilar/tslint-config"
   ],
-  "rules": { ... }
+  "rules": { "..." }
 }
 ```
 

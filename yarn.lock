@@ -479,8 +479,8 @@ tslint-microsoft-contrib@^4.0.0:
   resolved "https://registry.yarnpkg.com/tslint-microsoft-contrib/-/tslint-microsoft-contrib-4.0.0.tgz#7e00a56c1417251d3f91a880efcc43361a69fb2a"
 
 tslint-react@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-2.4.0.tgz#82c314f2752c419c6e41d9789587ef42f64261ea"
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/tslint-react/-/tslint-react-2.5.0.tgz#94cd6143f6ae825c47f242c5146fc89caeadeae2"
 
 tslint@^4.5.1:
   version "4.5.1"

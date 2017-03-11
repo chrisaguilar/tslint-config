@@ -1,0 +1,18 @@
+module.exports = {
+  "array-bracket-spacing": [true, "always", { "arraysInArrays": false, "objectsInArrays": false, "singleValue": false }],
+  "block-spacing": [true, "always"],
+  "brace-style": [true, "1tbs", { "allowSingleLine": true }],
+  "handle-callback-err": [true, "^(err|error|e|rej|reject)$"],
+  "no-empty-character-class": true,
+  "no-ex-assign": true,
+  "no-extra-boolean-cast": true,
+  "no-inner-declarations": [true, "both"],
+  "no-irregular-whitespace": true,
+  "no-multi-spaces": [true, { "exceptions": { "BinaryExpression": false, "PropertyAssignment": false, "VariableDeclaration": false } }],
+  "no-unexpected-multiline": true,
+  "object-curly-spacing": [true, "always"],
+  "space-in-parens": [true, "always", { "exceptions": ["{}", "[]", "()", "empty"] }],
+  "ter-arrow-body-style": [true, "as-needed", { "requireReturnForObjectLiteral": true }],
+  "ter-arrow-spacing": [true, { "before": true, "after": true }],
+  "valid-jsdoc": [true, { "prefer": { "return": "returns" }, "requireReturn": true, "requireParamDescription": true, "requireReturnDescription": true, "matchDescription": "^[A-Z][A-Za-z0-9\\s]*[.]$" }],
+}

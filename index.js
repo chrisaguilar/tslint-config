@@ -11,7 +11,7 @@ module.exports = {
     join(dirname(resolve("tslint-eslint-rules")), '/dist/rules'),
     dirname(resolve("tslint-microsoft-contrib")),
     join(dirname(resolve("tslint-react")), '/rules'),
-    join(dirname(resolve("tslint")), '/lib/rules')
+    join(dirname(resolve("tslint")), '/rules')
   ],
   "rules": Object.assign({}, eslint, msft, react, tslint)
 }

@@ -50,18 +50,7 @@ module.exports = {
     true,
     "always"
   ],
-  "space-in-parens": [
-    true,
-    "always",
-    {
-      "exceptions": [
-        "{}",
-        "[]",
-        "()",
-        "empty"
-      ]
-    }
-  ],
+  "space-in-parens": false,
   "ter-arrow-body-style": [
     true, "as-needed",
     {

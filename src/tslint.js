@@ -196,35 +196,8 @@ module.exports = {
     }
   ],
   "triple-equals": true,
-  "typedef": [
-    true,
-    "call-signature",
-    "arrow-call-signature",
-    "parameter",
-    "arrow-parameter",
-    "property-declaration",
-    "variable-declaration",
-    "member-variable-declaration",
-    "object-destructuring",
-    "array-destructuring"
-  ],
-  "typedef-whitespace": [
-    true,
-    {
-      "call-signature": "nospace",
-      "index-signature": "nospace",
-      "parameter": "nospace",
-      "property-declaration": "nospace",
-      "variable-declaration": "nospace"
-    },
-    {
-      "call-signature": "onespace",
-      "index-signature": "onespace",
-      "parameter": "onespace",
-      "property-declaration": "onespace",
-      "variable-declaration": "onespace"
-    }
-  ],
+  "typedef": false,
+  "typedef-whitespace": false,
   "typeof-compare": true,
   "unified-signatures": true,
   "use-isnan": true,

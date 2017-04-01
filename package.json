@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/chrisaguilar/tslint-config#readme",
   "dependencies": {
-    "tslint": "^4.5.1",
+    "tslint": "4.5.1",
     "tslint-eslint-rules": "^3.4.0",
     "tslint-microsoft-contrib": "^4.0.0",
     "tslint-react": "^2.4.0",

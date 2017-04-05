@@ -1,6 +1,6 @@
 {
   "name": "@chrisaguilar/tslint-config",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "My Personal TSLint Config",
   "main": "index.js",
   "scripts": {},

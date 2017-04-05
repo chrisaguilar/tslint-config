@@ -10,7 +10,7 @@ module.exports = {
     "always"
   ],
   "jsx-no-lambda": false,
-  "jsx-no-multiline-js": true,
+  "jsx-no-multiline-js": false,
   "jsx-no-string-ref": true,
   "jsx-self-close": true,
   "jsx-use-translation-function": false,

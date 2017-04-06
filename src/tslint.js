@@ -72,7 +72,7 @@ module.exports = {
   "no-floating-promises": true,
   "no-for-in-array": true,
   "no-inferred-empty-object-type": true,
-  "no-invalid-template-strings": true,
+  // "no-invalid-template-strings": true,
   "no-invalid-this": true,
   "no-misused-new": true,
   "no-null-keyword": true,
@@ -88,7 +88,6 @@ module.exports = {
     true,
     "allow-fast-null-checks"
   ],
-  "no-unused-new": true,
   "no-unused-variable": false,
   "no-use-before-declare": true,
   "no-var-keyword": true,

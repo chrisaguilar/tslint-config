@@ -13,7 +13,7 @@ module.exports = {
       "order": "fields-first"
     }
   ],
-  "no-any": true,
+  "no-any": false,
   "no-empty-interface": true,
   "no-import-side-effect": [true, { "ignore-module": "\.(html|css)$" }],
   "no-inferrable-types": false,
@@ -91,9 +91,9 @@ module.exports = {
   "no-unused-variable": false,
   "no-use-before-declare": true,
   "no-var-keyword": true,
-  "no-void-expression": true,
+  "no-void-expression": false,
   "radix": true,
-  "restrict-plus-operands": true,
+  "restrict-plus-operands": false,
   "strict-boolean-expressions": false,
   "strict-type-predicates": true,
   "switch-default": true,

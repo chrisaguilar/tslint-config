@@ -13,7 +13,6 @@ module.exports = {
   "no-invalid-regexp": true,
   "no-irregular-whitespace": true,
   "no-regex-spaces": true,
-  "no-sparse-arrays": true,
   "no-unexpected-multiline": true,
   "valid-jsdoc": [
     true,

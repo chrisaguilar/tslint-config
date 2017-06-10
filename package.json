@@ -1,29 +1,29 @@
 {
-  "name": "@chrisaguilar/tslint-config",
-  "version": "0.1.5",
-  "description": "My Personal TSLint Config",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chrisaguilar/tslint-config.git"
-  },
-  "keywords": [
-    "tslint",
-    "config",
-    "typescript"
-  ],
-  "author": "Christopher Aguilar <christopher.m.aguilar@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chrisaguilar/tslint-config/issues"
-  },
-  "homepage": "https://github.com/chrisaguilar/tslint-config#readme",
-  "dependencies": {
-    "tslint": "^5.4.3",
-    "tslint-eslint-rules": "^4.1.1",
-    "tslint-microsoft-contrib": "^5.0.0",
-    "tslint-react": "^3.0.0",
-    "typescript": "^2.3.4"
-  }
+    "name": "@chrisaguilar/tslint-config",
+    "version": "0.1.5",
+    "description": "My Personal TSLint Config",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chrisaguilar/tslint-config.git"
+    },
+    "keywords": [
+        "tslint",
+        "config",
+        "typescript"
+    ],
+    "author": "Christopher Aguilar <christopher.m.aguilar@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/chrisaguilar/tslint-config/issues"
+    },
+    "homepage": "https://github.com/chrisaguilar/tslint-config#readme",
+    "dependencies": {
+        "tslint": "^5.4.3",
+        "tslint-eslint-rules": "^4.1.1",
+        "tslint-microsoft-contrib": "^5.0.0",
+        "tslint-react": "^3.0.0",
+        "typescript": "^2.3.4"
+    }
 }

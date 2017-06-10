@@ -11,10 +11,10 @@ or
 Then, in `tslint.json`:
 ```json
 {
-  "extends": [
-    "@chrisaguilar/tslint-config"
-  ],
-  "rules": { "..." }
+    "extends": [
+        "@chrisaguilar/tslint-config"
+    ],
+    "rules": { "..." }
 }
 ```
 

@@ -1,5 +1,4 @@
-module.exports = {
-    // Possible Errors
+{
     "no-constant-condition": true,
     "no-control-regex": true,
     "no-duplicate-case": true,
@@ -7,21 +6,12 @@ module.exports = {
     "no-ex-assign": true,
     "no-extra-boolean-cast": true,
     "no-extra-semi": true,
-    "no-inner-declarations": [
-        true, "both"
-    ],
+    "no-inner-declarations": [true, "both"],
     "no-invalid-regexp": true,
     "no-regex-spaces": true,
     "no-unexpected-multiline": true,
     "valid-typeof": true,
-
-    // Node.js and CommonJS
-    "handle-callback-err": [
-        true,
-        "^(err|error|e|rej|reject)$"
-    ],
-
-    // Stylistic Issues
+    "handle-callback-err": [true, "^(err|error|e|rej|reject)$"],
     "array-bracket-spacing": [
         true,
         "always",
@@ -31,11 +21,10 @@ module.exports = {
             "singleValue": false
         }
     ],
-    "block-spacing": [
-        true, "always"
-    ],
+    "block-spacing": [true, "always"],
     "brace-style": [
-        true, "1tbs",
+        true,
+        "1tbs",
         {
             "allowSingleLine": true
         }

@@ -1,10 +1,10 @@
 const { dirname, join } = require('path');
 const { resolve } = require;
 
-const eslint = require('./src/tslint-eslint-rules');
-const microsoft_contrib = require('./src/tslint-microsoft-contrib');
-const react = require('./src/tslint-react');
-const tslint = require('./src/tslint');
+const eslint = require('./src/tslint-eslint-rules.json');
+const microsoft_contrib = require('./src/tslint-microsoft-contrib.json');
+const react = require('./src/tslint-react.json');
+const tslint = require('./src/tslint.json');
 
 module.exports = {
     "rulesDirectory": [

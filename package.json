@@ -1,6 +1,6 @@
 {
     "name": "@chrisaguilar/tslint-config",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "My Personal TSLint Config",
     "main": "index.js",
     "scripts": {},
@@ -8,7 +8,11 @@
         "type": "git",
         "url": "git+https://github.com/chrisaguilar/tslint-config.git"
     },
-    "keywords": ["tslint", "config", "typescript"],
+    "keywords": [
+        "tslint",
+        "config",
+        "typescript"
+    ],
     "author": "Christopher Aguilar <christopher.m.aguilar@gmail.com>",
     "license": "MIT",
     "bugs": {

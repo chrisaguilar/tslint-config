@@ -8,11 +8,7 @@
         "type": "git",
         "url": "git+https://github.com/chrisaguilar/tslint-config.git"
     },
-    "keywords": [
-        "tslint",
-        "config",
-        "typescript"
-    ],
+    "keywords": ["tslint", "config", "typescript"],
     "author": "Christopher Aguilar <christopher.m.aguilar@gmail.com>",
     "license": "MIT",
     "bugs": {

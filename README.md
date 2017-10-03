@@ -2,18 +2,12 @@
 
 ## Usage
 
-`$ yarn add -D typescript tslint @chrisaguilar/tslint-config`
+`$ npm i -D typescript tslint @chrisaguilar/tslint-config`
 
-or
-
-`$ npm install -D typescript tslint @chrisaguilar/tslint-config`
-
-Then, in `tslint.json`:
+Then, in `<projectRoot>/tslint.json`:
 ```json
 {
-    "extends": [
-        "@chrisaguilar/tslint-config"
-    ],
+    "extends": "@chrisaguilar/tslint-config",
     "rules": { "..." }
 }
 ```

@@ -6,10 +6,11 @@ const react = require('./src/tslint-react.json');
 const tslint = require('./src/tslint.json');
 
 module.exports = {
-    "rulesDirectory": [
-        dirname(resolve("tslint-microsoft-contrib")),
-        join(dirname(resolve("tslint-react")), '/rules'),
-        join(dirname(resolve("tslint")), '/rules')
+    defaultSeverity: 'warn',
+    rulesDirectory: [
+        dirname(resolve('tslint-microsoft-contrib')),
+        join(dirname(resolve('tslint-react')), '/rules'),
+        join(dirname(resolve('tslint')), '/rules')
     ],
-    "rules": Object.assign({}, microsoft_contrib, react, tslint)
-}
+    rules: Object.assign({}, microsoft_contrib, react, tslint)
+};

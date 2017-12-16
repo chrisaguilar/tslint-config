@@ -3,7 +3,7 @@ const { resolve } = require;
 
 const microsoft_contrib = require('./src/tslint-microsoft-contrib.js');
 const react = require('./src/tslint-react.js');
-const tslint = require('./src/tslint.json');
+const tslint = require('./src/tslint.js');
 
 module.exports = {
     defaultSeverity: 'warn',

@@ -34,23 +34,6 @@ module.exports = {
     'export-name': true,
 
     /**
-     * Applies a naming convention to function names and method names.
-     *
-     * Note: `private-method-regex` takes precedence over `static-method-regex`, so
-     * a `private static method` must match `private-method-regex`
-     */
-    'function-name': [
-        true,
-        {
-            'method-regex': '^[a-z][\\w\\d]+$',
-            'private-method-regex': '^[a-z][\\w\\d]+$',
-            'protected-method-regex': '^[a-z][\\w\\d]+$',
-            'static-method-regex': '^[A-Z_\\d]+$',
-            'function-regex': '^[a-z][\\w\\d]+$'
-        }
-    ],
-
-    /**
      * The name of the imported module must match the name of the thing being
      * imported.
      *
@@ -78,19 +61,14 @@ module.exports = {
     'max-func-body-length': [
         true,
         {
-            'func-body-length': 30,
-            'func-expression-body-length': 30,
-            'arrow-body-length': 30,
-            'method-body-length': 30,
-            'ctor-body-length': 30,
+            'func-body-length': 50,
+            'func-expression-body-length': 50,
+            'arrow-body-length': 50,
+            'method-body-length': 50,
+            'ctor-body-length': 50,
             'ignore-comments': true
         }
     ],
-
-    /**
-     * All files must have a top level JSDoc comment.
-     */
-    'missing-jsdoc': true,
 
     /**
      * Do not invoke Mocha's describe.only, it.only or context.only functions.
@@ -139,7 +117,7 @@ module.exports = {
     /**
      * Do not use cookies
      */
-    'no-cookies': false,
+    'no-cookies': true,
 
     /**
      * Do not delete expressions. Only properties should be deleted.
@@ -164,19 +142,9 @@ module.exports = {
     'no-document-write': true,
 
     /**
-     * Do not use duplicate case labels in switch statements.
-     */
-    'no-duplicate-case': true,
-
-    /**
-     * Do not use empty interfaces; they serve no useful purpose.
-     */
-    'no-empty-interfaces': true,
-
-    /**
      * Avoid an empty line after an opening brace.
      */
-    'no-empty-line-after-opening-brace': true,
+    'no-empty-line-after-opening-brace': false,
 
     /**
      * Do not use the execScript functions.
@@ -252,25 +220,9 @@ module.exports = {
     'no-relative-imports': true,
 
     /**
-     * Do not use reserved keywords as names of local variables, fields,
-     * functoins, or other identifiers.
-     *
-     * Options: { "allow-quoted-properties": boolean }
-     */
-    'no-reserved-keywords': true,
-
-    /**
      * Avoid single line block comments and use single line comments instead.
      */
     'no-single-line-block-comment': true,
-
-    /**
-     * A stateless class represents a failure in the object oriented design of
-     * the system. A class without state is better modeled as a module or given
-     * some state. A stateless class is defined as a class with only static
-     * members and no parent class.
-     */
-    'no-stateless-class': true,
 
     /**
      * Do not use the version of `setImmediate` that accepts code as a string
@@ -320,18 +272,6 @@ module.exports = {
     'no-unnecessary-bind': true,
 
     /**
-     * Do not unnecessarily initialize the fields of a class to values they
-     * already have.
-     *
-     * There's no need to explicitly set a field to `undefined` in the
-     * field's initialization or in the class' constructor. If the field is
-     * initialized to a constant value (null, a string, a boolean, or some
-     * number) then there is no need to reassign the field to this value
-     * within the class constructor.
-     */
-    'no-unnecessary-field-initialization': true,
-
-    /**
      * Do not declare a variable only to return it from the function on the
      * next line.
      */
@@ -360,7 +300,7 @@ module.exports = {
      * Avoid keeping files around that only contain commented out code, are
      * completely empty, or only contain whitespace characters
      */
-    'no-useless-files': true,
+    'no-useless-files': false,
 
     /**
      * Do not use `with` statements. Assign the item to a new variable instead.
@@ -381,28 +321,6 @@ module.exports = {
      * token, auth, pass, or hash.
      */
     'possible-timing-attack': true,
-
-    /**
-     * Use array literal syntax when declaring or instantiating array types.
-     *
-     * Options: { 'allow-type-parameters': boolean }
-     */
-    'prefer-array-literal': true,
-
-    /**
-     * Prefer the traditional type casts instead of the new 'as-cast' syntax.
-     *
-     * For example, prefer `<string>myVariable` instead of
-     * `myVariable as string`.
-     */
-    'prefer-type-cast': false,
-
-    /**
-     * When a Promise instance is created, then either the `reject()` or
-     * `resolve()` parameter must be called on it within all code branches in
-     * the scope.
-     */
-    'promise-must-complete': true,
 
     /**
      * For accessibility of your website:
@@ -572,17 +490,6 @@ module.exports = {
     'react-this-binding-issue': true,
 
     /**
-     * Consistently use spaces around the brace characters of JSX attributes.
-     * You can either allow or bad spaces between the braces and the values
-     * they enclose.
-     *
-     * By default, braces spanning multiple lines are not allowed with either
-     * setting. If you want to allow them you can specify an additional
-     * `allowMultiline` property with the value false.
-     */
-    'react-tsx-curly-spacing': [true, 'always', { allowMultiline: false }],
-
-    /**
      * Remove unneeded properties defined in React Props and State interfaces.
      * Any interface named Props or State is defined as a React interface. All
      * fields in these interfaces must be referenced. This rule can be
@@ -595,12 +502,4 @@ module.exports = {
      * named parameter.
      */
     'use-named-parameter': true,
-
-    /**
-     * Ensures that the results of typeof are compared against a valid string.
-     * This rule aims to prevent errors from likely typos by ensuring that when
-     * the result of a typeof operation is compared against a string, that the
-     * string is a valid value.
-     */
-    'valid-typeof': false
 };

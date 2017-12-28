@@ -13,6 +13,6 @@ module.exports = {
         join(dirname(resolve('tslint-react')), '/rules'),
         join(dirname(resolve('tslint')), '/rules')
     ],
-    rules: {...microsoft_contrib, ...react, ...tslint},
-    jsRules: {...microsoft_contrib, ...react, ...tslint, ...jsRules}
+    rules: Object.assign({}, microsoft_contrib, react, tslint),
+    jsRules: Object.assign({}, microsoft_contrib, react, tslint, jsRules)
 };

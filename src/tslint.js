@@ -83,7 +83,7 @@ module.exports = {
     'no-parameter-reassignment': true,
 
     /**
-     * Disallows `/// <reference path="">` imports (use ES6-style imports instead).
+     * Disallows `/// <reference path=''>` imports (use ES6-style imports instead).
      */
     'no-reference': true,
 
@@ -277,6 +277,13 @@ module.exports = {
     'no-duplicate-variable': [true, 'check-parameters'],
 
     /**
+     * Bans usage of the delete operator with computed key expressions.
+     *
+     * Deleting dynamically computed keys is dangerous and not well optimized.
+     */
+    'no-dynamic-delete': true,
+
+    /**
      * Disallows empty blocks.
      */
     'no-empty': [true, 'allow-empty-catch'],
@@ -358,7 +365,7 @@ module.exports = {
     /**
      * Forbids unnecessary string literal property access.
      *
-     * Allows `obj["prop-erty"]`, disallows `obj["property"]` (should be
+     * Allows `obj['prop-erty']`, disallows `obj['property']` (should be
      * `obj.property`).
      */
     'no-string-literal': true,
@@ -402,7 +409,7 @@ module.exports = {
      * Warns when using an expression of type `any` in a dynamic way. Uses are
      * only allowed if they would work for `{} | null | undefined`. Type casts
      * and tests are allowed. Expressions that work on all values
-     * (such as `"" + x`) are allowed.
+     * (such as `'' + x`) are allowed.
      */
     'no-unsafe-any': true,
 
@@ -565,13 +572,29 @@ module.exports = {
     /**
      * Checks ordering of keys in object literals.
      */
-    'object-literal-sort-keys': [true, 'ignore-case', 'match-declaration-order'],
+    'object-literal-sort-keys': [true, 'ignore-case', 'match-declaration-order', 'shorthand-first'],
 
     /**
      * Requires that variable declarations use `const` instead of `let` and
      * `var` if possible.
      */
     'prefer-const': [true, { destructuring: 'all' }],
+
+    /**
+     * Requires that private variables are marked as `readonly` if they're
+     * never modified outside of the constructor.
+     *
+     * If a private variable is only assigned to in the constructor, it should
+     * be declared as `readonly`.
+     *
+     * Marking never-modified variables as readonly helps enforce the code's
+     * intent of keeping them as never-modified. It can also help prevent
+     * accidental changes of members not meant to be changed.
+     *
+     * If `only-inline-lambdas` is specified, only immediately-declared arrow
+     * functions are checked.
+     */
+    'prefer-readonly': true,
 
     /**
      * Requires or disallows trailing commas in array and object literals,
@@ -688,6 +711,14 @@ module.exports = {
     'newline-before-return': true,
 
     /**
+     * Requires that chained method calls be broken apart onto separate lines.
+     *
+     * This style helps to keep code 'vertical', avoiding the need for
+     * side-scrolling in IDEs or text editors.
+     */
+    'newline-per-chained-call': true,
+
+    /**
      * Requires parentheses when invoking a constructor via the `new` keyword.
      */
     'new-parens': true,
@@ -723,7 +754,7 @@ module.exports = {
     'no-redundant-jsdoc': true,
 
     /**
-     * Don't `<reference types="foo" />` if you import `foo` anyway.
+     * Don't `<reference types='foo' />` if you import `foo` anyway.
      */
     'no-reference-import': true,
 

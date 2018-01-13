@@ -20,9 +20,9 @@
     },
     "homepage": "https://github.com/chrisaguilar/tslint-config#readme",
     "dependencies": {
-        "tslint": "^5.8.0",
+        "tslint": "^5.9.1",
         "tslint-microsoft-contrib": "^5.0.1",
-        "tslint-react": "^3.3.3",
+        "tslint-react": "^3.4.0",
         "typescript": "^2.6.2"
     }
 }

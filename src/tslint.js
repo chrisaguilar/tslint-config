@@ -491,7 +491,7 @@ module.exports = {
     /**
      * Makes sure result of `typeof` is compared to correct string values.
      */
-    'typeof-compare': true,
+    'typeof-compare': false,
 
     /**
      * Warns if an explicitly specified type argument is the default for that

@@ -379,7 +379,7 @@ module.exports = {
     /**
      * Disallows importing and submodules.
      */
-    'no-submodule-imports': true,
+    'no-submodule-imports': false,
 
     /**
      * Disallows falling through case statements.

@@ -427,7 +427,7 @@ module.exports = {
     /**
      * Disallows unused imports, variables, function, and private class members.
      */
-    'no-unused-variable': [true, 'check-parameters'],
+    'no-unused-variable': true,
 
     /**
      * Disallows usage of variables before their declaration.

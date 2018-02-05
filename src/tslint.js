@@ -99,7 +99,7 @@ module.exports = {
      * `var module = require('module')` are banned. Instead use the ES6 style
      * imports of `import foo = require('foo')` imports.
      */
-    'no-var-requires': true,
+    'no-var-requires': false,
 
     /**
      * Disallows traditional (non-arrow) function expressions.
@@ -242,7 +242,7 @@ module.exports = {
     /**
      * Bans the use of specified `console` methods.
      */
-    'no-console': true,
+    'no-console': false,
 
     /**
      * Disallows access to the constructors of `String`, `Number`, and
@@ -411,7 +411,7 @@ module.exports = {
      * and tests are allowed. Expressions that work on all values
      * (such as `'' + x`) are allowed.
      */
-    'no-unsafe-any': true,
+    'no-unsafe-any': false,
 
     /**
      * Disallows control flow statements, such as `return`, `continue`,
@@ -471,7 +471,7 @@ module.exports = {
      * Restricts the types allowed in boolean expressions. By default only
      * booleans are allowed.
      */
-    'strict-boolean-expressions': true,
+    'strict-boolean-expressions': false,
 
     /**
      * Warns for type predicates that are always true or always false.
@@ -567,7 +567,7 @@ module.exports = {
     /**
      * Disallows invocation of `require()`.
      */
-    'no-require-imports': true,
+    'no-require-imports': false,
 
     /**
      * Checks ordering of keys in object literals.
@@ -702,7 +702,7 @@ module.exports = {
      * Requires that a default import have the same name as the declaration it
      * imports. Does nothing for anonymous default exports.
      */
-    'match-default-export-name': true,
+    'match-default-export-name': false,
 
     /**
      * Enforces a blank line before `return` when it's not the only line in the
@@ -716,7 +716,7 @@ module.exports = {
      * This style helps to keep code 'vertical', avoiding the need for
      * side-scrolling in IDEs or text editors.
      */
-    'newline-per-chained-call': true,
+    'newline-per-chained-call': false,
 
     /**
      * Requires parentheses when invoking a constructor via the `new` keyword.
@@ -746,7 +746,7 @@ module.exports = {
     /**
      * Disallows parameter properties in class constructors.
      */
-    'no-parameter-properties': true,
+    'no-parameter-properties': false,
 
     /**
      * Forbids JSDoc which duplicates TypeScript functionality.
@@ -823,7 +823,7 @@ module.exports = {
     /**
      * Warns for class methods that do not use 'this'.
      */
-    'prefer-function-over-method': true,
+    'prefer-function-over-method': false,
 
     /**
      * Prefer `foo(): void` over `foo: () => void` in interfaces and types.

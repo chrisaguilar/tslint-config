@@ -31,7 +31,7 @@ module.exports = {
      *
      * Options: <function-name-regex>[]
      */
-    'export-name': true,
+    'export-name': false,
 
     /**
      * The name of the imported module must match the name of the thing being
@@ -39,14 +39,14 @@ module.exports = {
      *
      * Options: {[module: string]: string}[]
      */
-    'import-name': true,
+    'import-name': false,
 
     /**
      * Do not use insecure sources for random bytes.
      *
      * Alternatives: `crypto.randomBytes && window.crypto.getRandomValues`
      */
-    'insecure-random': true,
+    'insecure-random': false,
 
     /**
      * When a jQuery Deferred instance is created, then either `reject()` or
@@ -180,7 +180,7 @@ module.exports = {
      * Avoid use of increment and decrement operators particularly as part of
      * complicated expressions.
      */
-    'no-increment-decrement': true,
+    'no-increment-decrement': false,
 
     /**
      * Do not write values to innerHTML, outerHTML, or set HTML useing the
@@ -217,7 +217,7 @@ module.exports = {
      * Do not use relative paths when importing external modules or ES6 import
      * declarations.
      */
-    'no-relative-imports': true,
+    'no-relative-imports': false,
 
     /**
      * Avoid single line block comments and use single line comments instead.

@@ -855,7 +855,7 @@ module.exports = {
     /**
      * Enforces consistent semicolon usage at the end of every statement.
      */
-    semicolon: [true, 'always'],
+    semicolon: [true, 'always', 'strict-bound-class-methods'],
 
     /**
      * Require or disallow a space before function parenthesis.

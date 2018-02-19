@@ -246,7 +246,7 @@ module.exports = {
      * Do not use suspicious comments, such as BUG, HACK, FIXME, LATER, LATER2,
      * TODO.
      */
-    'no-suspicious-comment': true,
+    'no-suspicious-comment': false,
 
     /**
      * Do not use the idiom `typeof x === 'undefined'`. You can safely use

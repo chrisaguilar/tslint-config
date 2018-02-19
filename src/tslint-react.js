@@ -25,6 +25,12 @@ module.exports = {
     'jsx-alignment': true,
 
     /**
+     * Allows blacklisting of JSX elements with an optional explanatory message
+     * in the reported failure.
+     */
+    'jsx-ban-elements': false,
+
+    /**
      * Allows blacklisting of props in JSX with an optional explanatory message
      * in the reported failure.
      */
@@ -45,7 +51,7 @@ module.exports = {
      *
      * Options: ["always", "never"]
      */
-    'jsx-curly-spacing': [true, 'always'],
+    'jsx-curly-spacing': [true, 'never'],
 
     /**
      * Requires or bans spaces before and after the = token in JSX element
@@ -89,7 +95,7 @@ module.exports = {
      * Disallows multiline JS expressions inside JSX blocks to promote
      * readability
      */
-    'jsx-no-multiline-js': true,
+    'jsx-no-multiline-js': false,
 
     /**
      * Passing strings to the ref prop of React elements is considered a legacy

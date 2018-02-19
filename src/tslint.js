@@ -1,5 +1,5 @@
 module.exports = {
-    //region Typescript-Specific Rules
+    // region Typescript-Specific Rules
 
     /**
      * Enforces function overloads to be consecutive.
@@ -30,7 +30,7 @@ module.exports = {
         true,
         {
             order: ['static-field', 'instance-field', 'constructor', 'static-method', 'instance-method'],
-            alphabetize: true
+            alphabetize: false
         }
     ],
 
@@ -53,7 +53,7 @@ module.exports = {
      * Disallows explicit type declarations for variables or parameters
      * initialized to a number, string, or boolean.
      */
-    'no-inferrable-types': false,
+    'no-inferrable-types': true,
 
     /**
      * Disallows internal `module`.
@@ -142,19 +142,9 @@ module.exports = {
      * - `member-variable-declaration` checks member variable declarations.
      * - `object-destructuring` checks object destructuring declarations.
      * - `array-destructuring` checks array destructuring declarations.
+     * [ true, 'call-signature', 'arrow-call-signature', 'parameter', 'arrow-parameter', 'property-declaration', 'variable-declaration', 'member-variable-declaration', 'object-destructuring', 'array-destructuring' ],
      */
-    typedef: [
-        true,
-        'call-signature',
-        'arrow-call-signature',
-        'parameter',
-        'arrow-parameter',
-        'property-declaration',
-        'variable-declaration',
-        'member-variable-declaration',
-        'object-destructuring',
-        'array-destructuring'
-    ],
+    typedef: false,
 
     /**
      * Requires or disallows whitespace for type definitions.
@@ -186,9 +176,9 @@ module.exports = {
      */
     'unified-signatures': true,
 
-    //endregion
+    // endregion
 
-    //region Functionality
+    // region Functionality
 
     /**
      * Warns for an awaited value that is not a Promise.
@@ -339,10 +329,10 @@ module.exports = {
     /**
      * Disallows use of the `null` keyword literal.
      */
-    'no-null-keyword': true,
+    'no-null-keyword': false,
 
     /**
-     * Forbids and object literal to appear in a type assertion expression.
+     * Forbids an object literal to appear in a type assertion expression.
      * Casting to `any` is still allowed.
      */
     'no-object-literal-type-assertion': true,
@@ -497,7 +487,7 @@ module.exports = {
      * Warns if an explicitly specified type argument is the default for that
      * type parameter.
      */
-    'use-default-type-parameter': false,
+    'use-default-type-parameter': true,
 
     /**
      * Enforces the use of the `isNaN()` function to check for `NaN` references
@@ -505,9 +495,9 @@ module.exports = {
      */
     'use-isnan': true,
 
-    //endregion
+    // endregion
 
-    //region Maintainability
+    // region Maintainability
 
     /**
      * Enforces a threshold of cyclomatic complexity.
@@ -603,9 +593,9 @@ module.exports = {
      */
     'trailing-comma': [true, { multiline: 'never', singleline: 'never' }],
 
-    //endregion
+    // endregion
 
-    //region Style
+    // region Style
 
     /**
      * Enforces vertical alignment
@@ -620,7 +610,7 @@ module.exports = {
     /**
      * Requires parenthesis around the parameters of arrow function definitions.
      */
-    'arrow-parens': [true, 'ban-single-arg-parens'],
+    'arrow-parens': true,
 
     /**
      * Suggests to convert `() => { return x; }` to `() => x;`.
@@ -651,22 +641,11 @@ module.exports = {
 
     /**
      * Enforces documentation for important items to be filled out.
+     * [true,{classes: true,enums: true,'enum-members': true,functions: true,
+     * interfaces: true,methods: true,namespaces: true,properties: true,types:
+     * true,variables: true}],
      */
-    'completed-docs': [
-        true,
-        {
-            classes: true,
-            enums: true,
-            'enum-members': true,
-            functions: true,
-            interfaces: true,
-            methods: true,
-            namespaces: true,
-            properties: true,
-            types: true,
-            variables: true
-        }
-    ],
+    'completed-docs': false,
 
     /**
      * Enforces UTF-8 file encoding.
@@ -691,7 +670,7 @@ module.exports = {
     /**
      * Prefer an interface declaration over a type literal (`type T = { ... }`).
      */
-    'interface-over-type-literal': true,
+    'interface-over-type-literal': false,
 
     /**
      * Enforces basic format rules for JSDoc comments.
@@ -908,5 +887,5 @@ module.exports = {
         'check-preblock'
     ]
 
-    //endregion
+    // endregion
 };

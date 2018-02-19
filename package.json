@@ -21,8 +21,8 @@
     "homepage": "https://github.com/chrisaguilar/tslint-config#readme",
     "dependencies": {
         "tslint": "^5.9.1",
-        "tslint-microsoft-contrib": "^5.0.2",
-        "tslint-react": "^3.5.0",
-        "typescript": "^2.7.1"
+        "tslint-microsoft-contrib": "^5.0.3",
+        "tslint-react": "^3.5.1",
+        "typescript": "^2.7.2"
     }
 }

@@ -821,6 +821,12 @@ module.exports = {
     'prefer-template': true,
 
     /**
+     * Prefer `while` loops instead of `for` loops without an initializer and
+     * incrementor.
+     */
+    'prefer-while': true,
+
+    /**
      * Requires single or double quotes for string literals.
      */
     quotemark: [true, 'single', 'jsx-single', 'avoid-template', 'avoid-escape'],

@@ -117,6 +117,11 @@ module.exports = {
     'jsx-self-close': true,
 
     /**
+     * Checks that self-closing JSX elements have a space before the `/>` part.
+     */
+    'jsx-space-before-trailing-slash': true,
+
+    /**
      * Enforces use of a translation function. Plain string literals are
      * disallowed in JSX when enabled.
      *

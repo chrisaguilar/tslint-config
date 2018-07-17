@@ -415,11 +415,6 @@ module.exports = {
     'no-unused-expression': [true, 'allow-fast-null-checks', 'allow-tagged-template'],
 
     /**
-     * Disallows unused imports, variables, function, and private class members.
-     */
-    'no-unused-variable': true,
-
-    /**
      * Disallows usage of variables before their declaration.
      */
     'no-use-before-declare': true,

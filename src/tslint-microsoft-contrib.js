@@ -54,7 +54,7 @@ module.exports = {
     'prefer-array-literal': true,
     'prefer-type-cast': false,
     'promise-must-complete': true,
-    'react-a11y-accessible-headings': true,
+    'react-a11y-accessible-headings': false,
     'react-a11y-anchors': true,
     'react-a11y-aria-unsupported-elements': true,
     'react-a11y-event-has-role': true,

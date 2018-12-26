@@ -100,5 +100,12 @@ module.exports = {
     'unified-signatures': false,
     'use-default-type-parameter': false,
     'use-named-parameter': false,
-    typedef: false
+    typedef: false,
+    'no-unnecessary-field-initialization': false,
+    'prefer-array-literal': false,
+    'promise-must-complete': false,
+    'react-a11y-input-elements': false,
+    'react-a11y-required': false,
+    'react-tsx-curly-spacing': false,
+    'no-require-imports': false
 };
